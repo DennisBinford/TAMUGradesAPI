@@ -14,7 +14,7 @@ app.use('/api/professor', professorRouter)
 connectDB()
     .then(() => {
         console.log('Successful database connection')
-        app.listen(3000)
+        app.listen(port)
     })
     .catch(err => console.log(err))
 
