@@ -8,7 +8,7 @@ const sectionRouter = require('./routes/sectionroute')
 const professorRouter = require('./routes/professorroute')
 
 const app = express()
-app.use('/section', sectionRouter)
+app.use('/', sectionRouter)
 app.use('/professor', professorRouter)
 
 connectDB()
