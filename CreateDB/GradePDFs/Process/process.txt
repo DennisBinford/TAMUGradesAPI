@@ -1,0 +1,2 @@
+Placeholder to put this folder into GitHub Repo
+Use this folder to put in any PDFs to get processed by the main.py script
