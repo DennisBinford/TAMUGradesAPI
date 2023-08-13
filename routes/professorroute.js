@@ -3,6 +3,12 @@ const router = express.Router()
 
 const Section = require('../models/sectionschema')
 
+router.get('/', (req, res) => {
+    Section.find()
+    .then(data => res.send(data))
+    .catch(err => console.log(err))
+})
+
 router.get('/:professor', (req, res) => {
     Section.find({Professor : {'$regex' : req.params.professor}})
     .then(data => {
